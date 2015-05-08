@@ -1,3 +1,7 @@
+Release 1.0.3 - 2015-05-10 - Gerard Ryan
+------------------------------------------------------
+* Use grunt-fh-build where possible, to clean up Gruntfile.js
+
 Release 1.0.2 - 2015-04-21 - Gerard Ryan
 ------------------------------------------------------
 * Fix typo in new version available message
