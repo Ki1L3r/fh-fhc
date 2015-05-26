@@ -4,7 +4,7 @@ var nockEnvironment = require('test/fixtures/appforms/fixture_env_forms');
 var appformsenvforms = {
   list : genericCommand(require('cmd/fh3/appforms/environments/forms/list')),
   read : genericCommand(require('cmd/fh3/appforms/environments/forms/read')),
-  copy_to_core : genericCommand(require('cmd/fh3/appforms/environments/forms/copy_to_core')),
+  copytocore : genericCommand(require('cmd/fh3/appforms/environments/forms/copytocore')),
   deploy : genericCommand(require('cmd/fh3/appforms/environments/forms/deploy')),
   lifecycle : genericCommand(require('cmd/fh3/appforms/environments/forms/lifecycle')),
   promote : genericCommand(require('cmd/fh3/appforms/environments/forms/promote')),
@@ -54,7 +54,7 @@ module.exports = {
       return cb();
     });
   },
-  'test appforms-forms copy_to_core': function(cb) {
+  'test appforms-forms copytocore': function(cb) {
     appformsenvforms.copy_to_core({environment: "someenv", id: "someformid"}, function (err, data){
       assert.equal(err, null);
       assert.equal(data._id, 'someformid');
